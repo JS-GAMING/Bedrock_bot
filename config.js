@@ -1,8 +1,8 @@
 module.exports = {
   server: {
-    host: 'funtimefam.aternos.me',
-    port: 52471,
-    username: 'bot_maaman'
+    host: process.env.SERVER_HOST,
+    port: parseInt(process.env.SERVER_PORT),
+    username: process.env.BOT_NAME || 'AFK_Bot'
   },
   web: {
     port: process.env.PORT || 3000
